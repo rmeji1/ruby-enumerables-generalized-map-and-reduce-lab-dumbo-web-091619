@@ -12,7 +12,7 @@ def reduce(source_array, starting_point = 0)
   total = starting_point
   
   for element in source_array
-    yield(starting_point, element)
+   starting_point = yield(starting_point, element)
   end
   
   return starting_point
