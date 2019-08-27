@@ -11,5 +11,6 @@ end
 def reduce(source_array, starting_point = 0)
   condition = yield(source_array[0], starting_point)
   
+  while condition
   return starting_point
 end
