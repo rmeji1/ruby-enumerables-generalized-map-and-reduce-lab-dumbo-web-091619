@@ -10,7 +10,7 @@ end
 
 def reduce(source_array, starting_point = 0)
   for element in source_array
-   starting_point = yield(starting_point, element)
+   starting_point = yield(element, starting_point)
   end
   
   return !starting_point ? !!starting_point : starting_point
