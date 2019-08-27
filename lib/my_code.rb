@@ -9,8 +9,8 @@ def map(source_array)
 end
 
 def reduce(source_array, starting_point = 0)
-  condition = yield(source_array[0], starting_point)
+  condition = true
   
-  while condition
+  while condition do
   return starting_point
 end
