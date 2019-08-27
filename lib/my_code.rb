@@ -8,6 +8,11 @@ def map(source_array)
   return dest_array
 end
 
-def reduce(source_array)
+def reduce(source_array, starting_point)
+  total = starting_point
+  
+  for element in source_array
+    total += element
+  end
   
 end
