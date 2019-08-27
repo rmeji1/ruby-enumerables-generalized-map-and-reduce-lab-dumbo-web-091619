@@ -18,4 +18,8 @@ def reduce(source_array, starting_point = 0)
       return starting_point
   end
   
+   for element in source_array
+       yield(starting_point, element)
+    end
+  
 end
