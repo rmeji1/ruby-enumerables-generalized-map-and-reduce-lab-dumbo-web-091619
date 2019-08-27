@@ -13,5 +13,5 @@ def reduce(source_array, starting_point = 0)
    starting_point = yield(element, starting_point)
   end
   
-  return !starting_point? !!starting_point : starting_point
+  return !starting_point ? !!starting_point : starting_point
 end
