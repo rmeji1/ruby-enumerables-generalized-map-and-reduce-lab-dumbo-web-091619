@@ -15,5 +15,7 @@ def reduce(source_array, starting_point = 0)
   
   if !starting_point
     return !!starting_point
-  return starting_point
+  else
+    return starting_point
+  end
 end
