@@ -9,9 +9,7 @@ def map(source_array)
 end
 
 def reduce(source_array, starting_point = 0)
-  for element in source_array
-   starting_point = yield(starting_point, element)
-  end
+  condition = yield(source_array[0], starting_point)
   
   return starting_point
 end
